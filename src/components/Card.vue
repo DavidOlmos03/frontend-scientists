@@ -14,11 +14,11 @@ defineProps({
 </script>
 
 <template>
-    <div v-if="scientists.length > 0" class="grid grid-cols-12 gap-4">
+    <div v-if="scientists.length > 0" class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div
         v-for="(scientist, index) in scientists"
         :key="index"
-        class="rounded border md:shadow w-full overflow-hidden md:flex col-span-6 bg-gray-800"
+        class="rounded border md:shadow w-full overflow-hidden md:flex bg-gray-800 "
       >
         <div class="md:w-1/4">
           <a href="#">

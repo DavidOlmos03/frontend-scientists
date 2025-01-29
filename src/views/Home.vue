@@ -28,7 +28,7 @@ onMounted(() => {
       Scientists
     </h1>
     
-    <Card 
+    <Card
       :scientists = "scientists"
     />
   </div>
