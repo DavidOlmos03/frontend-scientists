@@ -1,36 +1,29 @@
-
 <script setup>
-import { ref, onMounted } from 'vue';
-import axios from 'axios';
+
 import Card from '@/components/Card.vue';
-import { RouterView } from 'vue-router';
+import { useScientistsStore } from '../../stores/scientists';
+import { onMounted, computed } from 'vue';
 
-const library = ref("");
+const scientistsStore = useScientistsStore();
+// const { fetchScientists, scientists } = scientistsStore;
+const scientists = computed(() => scientistsStore.scientists);
+const fetchScientists = scientistsStore.fetchScientists;
 
-const getResponse = async () => {
-  const path = 'http://127.0.0.1:5000/library';
-  try {
-    const res = await axios.get(path);
-    console.log(res.data);
-    library.value = res.data; 
-  } catch (err) {
-    console.error(err);
-  }
-};
 
 onMounted(() => {
-  getResponse();
-});
-
+    fetchScientists();
+    console.log('Scientists in store:', scientistsStore.scientists); // Debug
+  });
 </script>
 
 <template>
-	<h1>
-		This is a full library 
-	</h1>
-	<p>{{library}}</p>
-
-	<div class="pt-32 container mx-auto lg-min-h-screen">
-            <RouterView />
-        </div>
+  <div class="bg-white dark:bg-slate-800 ">
+    <h1 class="text-5xl font-extrabold uppercase text-indigo-600 text-center mb-6 shadow-lg py-7 mt-10 dark:text-white bg-gray-800 rounded-3xl">
+      Scientists
+    </h1>
+    
+    <Card 
+      :scientists = "scientists"
+    />
+  </div>
 </template>

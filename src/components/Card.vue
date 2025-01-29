@@ -18,7 +18,7 @@ defineProps({
       <div
         v-for="(scientist, index) in scientists"
         :key="index"
-        class="rounded border md:shadow w-full overflow-hidden md:flex col-span-6"
+        class="rounded border md:shadow w-full overflow-hidden md:flex col-span-6 bg-gray-800"
       >
         <div class="md:w-1/4">
           <a href="#">
@@ -31,25 +31,25 @@ defineProps({
         </div>
   
         <div class="md:w-3/4 max-w-full px-4 py-4">
-          <div class="text-xs text-gray-600 font-medium">
-            <a href="#" class="uppercase hover:underline">
+          <div class="text-xs text-white font-medium">
+            <a href="#" class="uppercase hover:underline text-white">
               {{ scientist.area }}
             </a>
             <span class="mx-1">&bull;</span>
-            <span>{{ scientist.birthday }}</span>
+            <span class="text-white">{{ scientist.birthday }}</span>
           </div>
   
-          <h3 class="font-semibold text-gray-800 my-2 hover:underline text-lg">
+          <h3 class="font-semibold text-white my-2 hover:underline text-lg">
             <a href="#">{{ scientist.name }}</a>
           </h3>
   
-          <div class="mb-4 w-full text-gray-700">
+          <div class="mb-4 w-full text-white">
             {{ scientist.description }}
           </div>
   
           <div class="flex items-center justify-between">
             <div
-              class="text-sm text-gray-800 inline-flex items-center text-gray-700"
+              class="text-sm inline-flex items-center text-white"
             >
               <a href="#">
                 <img

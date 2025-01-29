@@ -51,7 +51,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="library/physics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <router-link to="physics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                             <div class="font-semibold">Physics</div>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Physics data from scientists</span>
                         </router-link>

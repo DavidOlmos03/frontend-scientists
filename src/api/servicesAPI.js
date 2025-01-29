@@ -2,15 +2,15 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: '/api', // Usamos el prefijo del proxy configurado en Vite
+  baseURL: '/api', // BaseURL in the axios instance, this is a vite configuration
   timeout: 5000,
 });
 
-// Puedes añadir interceptores si es necesario
+// Interceptors for the requests
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
-    console.error('Error en la respuesta:', error);
+    console.error('Error in the request:', error);
     return Promise.reject(error);
   }
 );
