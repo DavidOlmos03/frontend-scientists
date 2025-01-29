@@ -24,7 +24,7 @@ defineProps({
           <a href="#">
             <img
               class="object-cover h-full w-full"
-              src="https://raw.githubusercontent.com/vuetailwind/storage/master/cards/card-2.jpg"
+              :src="`/src/assets/imgs/${scientist.name.replace(/ /g, '_')}.jpg`"
               alt="scientist image"
             />
           </a>
@@ -54,7 +54,7 @@ defineProps({
               <a href="#">
                 <img
                   class="w-8 h-8 rounded-full inline-block mr-2"
-                  src="https://raw.githubusercontent.com/vuetailwind/storage/master/avatars/avatar-boy-1.jpg"
+                  src="/src/assets/imgs/avatar.jpeg"
                   alt="scientist avatar"
                 />
               </a>
