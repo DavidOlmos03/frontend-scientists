@@ -1,5 +1,8 @@
 <script setup>
+    import LiNavbar from '@/components/LiNavbar.vue';
 
+    const list1 = ['library','mathematics', 'physics'];
+    const list2 = ['engineering', 'others'];
 </script>
 
 <template>
@@ -38,44 +41,10 @@
         <div id="mega-menu-full-dropdown" class="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
             <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
                 <ul>
-                    <li>
-                        <router-link to="/library" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">All</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">All data from scientists.</span>
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/library/mathematics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Mathematics</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Mathematics data from scientists</span>
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/library/physics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Physics</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Physics data from scientists</span>
-                        </router-link>
-                    </li>
+                    <LiNavbar v-for="item in list1" :key="item" :area="item" />
                 </ul>
                 <ul>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">BIOLOGY</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Biology data from scientists.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">ASTRONOMY</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Astronomy data from scientists.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">CHEMISTRY</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Chemistry data from scientists.</span>
-                        </a>
-                    </li>
+                    <LiNavbar v-for="item in list2" :key="item" :area="item" />
                 </ul>
             </div>
         </div>
