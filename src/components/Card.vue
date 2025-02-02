@@ -34,7 +34,7 @@
         <div class="md:w-3/4 max-w-full px-4 py-4">
           <div class="text-xs text-white font-medium">
             <a href="#" class="uppercase hover:underline text-white">
-              {{ scientist.area === 1 ? 'Mathematics' : scientist.area === 2 ? 'Physics' : scientist.area === 3 ? 'Engineering' : 'Unknown' }}
+              {{ scientist.area === 1 ? 'Mathematics' : scientist.area === 2 ? 'Physics' : scientist.area === 3 ? 'Engineering' : 'Other' }}
             </a>
             <span class="mx-1">&bull;</span>
             <span class="text-white">{{ scientist.birthday }}</span>
