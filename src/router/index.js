@@ -54,6 +54,16 @@ const routes = [
     name: 'Physics',
     component: () => import('../views/library/Physics.vue'),
   },
+  {
+    path: '/library/engineering',
+    name: 'Engineering',
+    component: () => import('../views/library/Engineering.vue'),
+  },
+  {
+    path: '/library/others',
+    name: 'Others',
+    component: () => import('../views/library/Others.vue'),
+  },
 
 ];
 
