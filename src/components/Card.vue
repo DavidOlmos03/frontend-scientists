@@ -1,16 +1,17 @@
 <script setup>
-import { ref , onMounted} from 'vue'
+  import { ref , onMounted} from 'vue'
 
-const count = ref(0)
+  const count = ref(0)
 
-import { defineProps } from 'vue';
+  import { defineProps } from 'vue';
 
-defineProps({
-  scientists: {
-    type: Array,
-    required: true,
-  },
-  });
+  defineProps({
+    scientists: {
+      type: Array,
+      required: true,
+    },
+    });
+  
 </script>
 
 <template>
@@ -33,7 +34,7 @@ defineProps({
         <div class="md:w-3/4 max-w-full px-4 py-4">
           <div class="text-xs text-white font-medium">
             <a href="#" class="uppercase hover:underline text-white">
-              {{ scientist.area }}
+              {{ scientist.area === 1 ? 'Mathematics' : scientist.area === 2 ? 'Physics' : scientist.area === 3 ? 'Engineering' : 'Unknown' }}
             </a>
             <span class="mx-1">&bull;</span>
             <span class="text-white">{{ scientist.birthday }}</span>
