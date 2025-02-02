@@ -12,7 +12,7 @@ const fetchScientists = scientistsStore.fetchScientists;
 
 onMounted(() => {
     fetchScientists();
-    console.log('Scientists in store:', scientistsStore.scientists); // Debug
+    // console.log('Scientists in store:', scientistsStore.scientists); // Debug
   });
 </script>
 

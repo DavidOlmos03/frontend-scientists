@@ -3,9 +3,6 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
 
-// Library
-import Library from '../views/library/Library.vue';
-
 // Errors pages 
 import NotFound from '../views/errors/NotFound.vue';
 import Loading from '../views/errors/Loading.vue';
@@ -45,15 +42,19 @@ const routes = [
   {
     path: '/library',
     name: 'Library',
-    component: () => Library,
-    children: [
-	{
-	path: 'physics',
-	name: 'Physics',
-	component: () => import('../views/library/Physics.vue')
-	}
-    ]
-  }
+    component: () => import('../views/library/Library.vue'),
+  },
+  {
+    path: '/library/mathematics',
+    name: 'Mathematics',
+    component: () => import('../views/library/Mathematics.vue'),
+  },
+  {
+    path: '/library/physics',
+    name: 'Physics',
+    component: () => import('../views/library/Physics.vue'),
+  },
+
 ];
 
 const router = createRouter({

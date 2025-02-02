@@ -23,8 +23,8 @@
                     <li>
                         <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Library <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-    </svg></button>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg></button>
                     </li>
                     <li>
                         <a href="https://mundostem.netlify.app/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">MundoStem</a>
@@ -39,19 +39,19 @@
             <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
                 <ul>
                     <li>
-                        <router-link to="library" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <router-link to="/library" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                             <div class="font-semibold">All</div>
                             <span class="text-sm text-gray-500 dark:text-gray-400">All data from scientists.</span>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="mathematics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <router-link to="/library/mathematics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                             <div class="font-semibold">Mathematics</div>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Mathematics data from scientists</span>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="physics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <router-link to="/library/physics" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                             <div class="font-semibold">Physics</div>
                             <span class="text-sm text-gray-500 dark:text-gray-400">Physics data from scientists</span>
                         </router-link>
