@@ -26,7 +26,7 @@
             <img
               class="object-cover h-full w-full"
               :src="`/src/assets/imgs/${scientist.name.replace(/ /g, '_')}.jpg`"
-              alt="scientist image"
+              alt="Scientist image"
             />
           </a>
         </div>
