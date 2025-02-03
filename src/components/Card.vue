@@ -64,9 +64,9 @@
             </div>
   
             <div class="text-right">
-              <a href="#" class="py-2 text-indigo-600 text-xs uppercase hover:underline"
-                >Read More <span>&rarr;</span>
-              </a>
+              <router-link :to="`/library/scientist/${scientist.id}`" class="py-2 text-indigo-600 text-xs uppercase hover:underline">
+                Read More <span>&rarr;</span>
+              </router-link>
             </div>
           </div>
         </div>
