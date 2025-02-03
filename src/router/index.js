@@ -64,6 +64,11 @@ const routes = [
     name: 'Others',
     component: () => import('../views/library/Others.vue'),
   },
+  {
+    path: '/library/scientist/:id',
+    name: 'Scientist',
+    component: () => import('../views/library/Scientist.vue'),
+  }
 
 ];
 

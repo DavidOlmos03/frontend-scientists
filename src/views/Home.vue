@@ -23,7 +23,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-white dark:bg-slate-800 ">
+  <div class="bg-white dark:bg-slate-800">
     <h1 class="text-5xl font-extrabold uppercase text-indigo-600 text-center mb-6 shadow-lg py-7 mt-10 dark:text-white bg-gray-800 rounded-3xl">
       Scientists
     </h1>
