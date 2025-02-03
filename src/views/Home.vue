@@ -5,20 +5,12 @@ import { useScientistsStore } from '../stores/scientists';
 import { onMounted, watch, computed } from 'vue';
 
 const scientistsStore = useScientistsStore();
-// const { fetchScientists, scientists } = scientistsStore;
 const scientists = computed(() => scientistsStore.scientists);
 const fetchScientists = scientistsStore.fetchScientists;
 
-// watch(
-//   () => scientistsStore.scientists,
-//   (newScientists) => {
-//     console.log('Scientists updated:', newScientists); // Debug
-//   }
-// );
 
 onMounted(() => {
     fetchScientists();
-    // console.log('Scientists in store:', scientistsStore.scientists); // Debug
   });
 </script>
 
