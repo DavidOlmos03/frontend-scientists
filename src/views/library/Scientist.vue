@@ -16,9 +16,9 @@
 </script>
 
 <template>
-   <div class="flex gap-[2%] flex-wrap content-start p-4 bg-gray-800 rounded-lg shadow-lg mt-10">
+   <div class="flex gap-[2%] flex-wrap content-start p-4 bg-gray-800 rounded-lg shadow-lg mt-10 py-10">
     <!-- Scientist Name -->
-    <div class="w-full h-[5%] mb-3 bg-gray-600 text-white text-center p-2 rounded-md shadow-md md:h-[7%] lg:h-[8%]">
+    <div class="w-full h-[5%] mb-3 bg-gray-600 text-white text-center p-2 rounded-md shadow-md md:h-[7%] lg:h-[8%] uppercase text-xl font-bold">
         {{ scientist.name }}
     </div>
 
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="w-full h-[5%] mt-3 bg-gray-600 text-white text-center p-2 rounded-md shadow-md md:h-[7%] lg:h-[8%]">
+    <div class="w-full h-[5%] mt-3 bg-gray-600 text-white text-center p-2 rounded-md shadow-md md:h-[7%] lg:h-[8%] uppercase">
         {{ scientist.area === 1 ? 'Mathematics' : scientist.area === 2 ? 'Physics' : scientist.area === 3 ? 'Engineering' : 'Other' }} - @{{ scientist.creator ? scientist.creator : 'unknown' }}
     </div>
 </div>

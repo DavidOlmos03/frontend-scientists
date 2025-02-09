@@ -1,0 +1,6 @@
+projectKey=mi-proyecto-vue
+serverUrl=http://localhost:9000
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9000/dashboard?id=mi-proyecto-vue
+ceTaskId=4c028f60-3874-46ef-9f98-0ab886f8d294
+ceTaskUrl=http://localhost:9000/api/ce/task?id=4c028f60-3874-46ef-9f98-0ab886f8d294
