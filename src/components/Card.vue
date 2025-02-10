@@ -10,8 +10,8 @@
       type: Array,
       required: true,
     },
-    });
-  
+    }); 
+
 </script>
 
 <template>
@@ -63,7 +63,7 @@
                 />
               </a>
               by
-              <a href="#" class="ml-1 hover:underline">{{ scientist.creator }}</a>
+              <a href="#" class="ml-1 hover:underline font-bold">{{ scientist.creator.name }}</a>
             </div>
   
             <div class="text-right">
