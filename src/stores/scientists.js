@@ -1,4 +1,4 @@
-import { ref, onMounted, computed } from 'vue';
+import { ref } from 'vue';
 import { defineStore } from "pinia";
 import axiosInstance from '../api/servicesAPI';
 
@@ -34,6 +34,8 @@ export const useScientistsStore = defineStore('scientists', ()=>{
         console.error('Error fetching data:',  error.response || error);
       }
     };
+
+
 
     return {
       scientists,
