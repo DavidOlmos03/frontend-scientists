@@ -29,7 +29,9 @@ onMounted(() => {
     <div 
       class="w-1/2 h-96 bg-gray-100 rounded-3xl mx-auto hover:shadow-lg my-5"
     >
-      <BarChart :labels="areas" />
+      <BarChart 
+        :labels="areas" 
+      />
     </div>
     <Card
       :scientists = "scientists"
