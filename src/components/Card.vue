@@ -12,12 +12,18 @@
     },
     }); 
 
+const visibleCount = ref(6);
+
+const loadMore = ()=>{
+  visibleCount.value += 6;
+}
+
 </script>
 
 <template>
     <div v-if="scientists.length > 0" class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div
-        v-for="(scientist, index) in scientists"
+        v-for="(scientist, index) in scientists.slice(0, visibleCount)"
         :key="index"
         class="rounded-lg border md:shadow w-full overflow-hidden md:flex bg-gray-800 opacity-90 hover:opacity-100 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out"
         v-animateonscroll="{ enterClass: 'animate-flipup', leaveClass: 'animate-fadeout' }"
@@ -78,5 +84,14 @@
     </div>
     <div v-else>
       <p>Loading scientists...</p>
+    </div>
+    <!-- Load more button -->
+    <div v-if="visibleCount < scientists.length" class="flex justify-center mt-10">
+      <button
+        @click="loadMore"
+        class="bg-indigo-600 text-white px-6 py-2 rounded-lg text-sm uppercase hover:bg-indigo-700 transition-all duration-300"
+      >
+        Load more
+      </button>
     </div>
 </template>
