@@ -20,7 +20,8 @@
         v-for="(scientist, index) in scientists"
         :key="index"
         class="rounded-lg border md:shadow w-full overflow-hidden md:flex bg-gray-800 opacity-90 hover:opacity-100 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out"
-      >
+        v-animateonscroll="{ enterClass: 'animate-flipup', leaveClass: 'animate-fadeout' }"
+        >
         <div class="md:w-1/4 hover:scale-110 transition-transform duration-300 ease-in-out">
           <router-link :to="`/library/scientist/${scientist.id}`">
             <img
