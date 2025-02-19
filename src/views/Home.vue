@@ -1,6 +1,8 @@
 <script setup>
 
 import Card from '@/components/Card.vue';
+import Title from '@/components/Title.vue';
+
 import { useScientistsStore } from '../stores/scientists';
 import { useAreasStore } from '../stores/areas';
 
@@ -24,9 +26,7 @@ onMounted(() => {
 
 <template>
   <div class="bg-white dark:bg-slate-800">
-    <h1 class="text-5xl font-extrabold uppercase text-indigo-600 text-center mb-6 shadow-lg py-7 mt-10 dark:text-white bg-gray-800 rounded-3xl">
-      Scientists
-    </h1>
+    <Title title="Scientists" :subtitle="scientists.length + ' scientists'" />
     <div class="grid grid-cols-3 gap-4 mb-5 mx-10">
       <div 
         class="col-span-2 h-96 bg-gray-100 rounded-3xl hover:shadow-lg my-5"

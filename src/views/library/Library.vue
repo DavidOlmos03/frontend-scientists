@@ -1,26 +1,23 @@
 <script setup>
 
 import Card from '@/components/Card.vue';
+import Title from '@/components/Title.vue';
 import { useScientistsStore } from '../../stores/scientists';
 import { onMounted, computed } from 'vue';
 
 const scientistsStore = useScientistsStore();
-// const { fetchScientists, scientists } = scientistsStore;
 const scientists = computed(() => scientistsStore.scientists);
 const fetchScientists = scientistsStore.fetchScientists;
 
 
 onMounted(() => {
     fetchScientists();
-    // console.log('Scientists in store:', scientistsStore.scientists); // Debug
   });
 </script>
 
 <template>
   <div class="bg-white dark:bg-slate-800 ">
-    <h1 class="text-5xl font-extrabold uppercase text-indigo-600 text-center mb-6 shadow-lg py-7 mt-10 dark:text-white bg-gray-800 rounded-3xl">
-      Scientists
-    </h1>
+    <Title title="Library" :subtitle="scientists.length + ' scientists'" />
     
     <Card 
       :scientists = "scientists"

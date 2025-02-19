@@ -1,5 +1,6 @@
 <script setup>
 import { reactive, computed } from "vue";
+import Title from '@/components/Title.vue';
 
 const form = reactive({
   area: null,
@@ -46,6 +47,7 @@ const submitForm = () => {
 
 <template>
   <div class="w-1/2 mx-auto p-6 bg-white shadow-lg rounded-lg shadow-2xl">
+    <Title title="prediction" subtitle="Discover your inner scientist" />
     <form @submit.prevent="submitForm" class="space-y-4 my-10 shadow-2xl p-4 border-2 hover:border-red-300 rounded-lg">
       <div>
         <label class="block font-semibold">Área:</label>
