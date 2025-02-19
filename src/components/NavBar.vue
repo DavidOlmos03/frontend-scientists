@@ -45,7 +45,15 @@
                 </ul>
                 <ul>
                     <LiNavbar v-for="item in list2" :key="item" :area="item" />
-                </ul>
+                    <li>
+                       <router-link 
+                        to="/prediction" 
+                        class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <div class="font-semibold uppercase">¿What scientis?</div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Prediction model by your coincidential scientist.</span>
+                    </router-link>
+                    </li>
+               </ul>
             </div>
         </div>
     </nav>
