@@ -25,7 +25,7 @@ const loadMore = ()=>{
       <div
         v-for="(scientist, index) in scientists.slice(0, visibleCount)"
         :key="index"
-        class="rounded-lg border md:shadow w-full overflow-hidden md:flex bg-gray-800 opacity-90 hover:opacity-100 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out"
+        class="rounded-lg border md:shadow w-full overflow-hidden md:flex bg-gray-700 opacity-90 hover:opacity-100 hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out"
         v-animateonscroll="{ enterClass: 'animate-flipup', leaveClass: 'animate-fadeout' }"
         >
         <div class="md:w-1/4 hover:scale-110 transition-transform duration-300 ease-in-out">
@@ -74,7 +74,7 @@ const loadMore = ()=>{
             </div>
   
             <div class="text-right">
-              <router-link :to="`/library/scientist/${scientist.id}`" class="py-2 text-indigo-600 text-xs uppercase hover:underline hover:text-white hover:font-bold">
+              <router-link :to="`/library/scientist/${scientist.id}`" class="py-2 text-red-600 text-xs uppercase hover:underline hover:text-white hover:font-bold">
                 Read More <span>&rarr;</span>
               </router-link>
             </div>
@@ -89,7 +89,7 @@ const loadMore = ()=>{
     <div v-if="visibleCount < scientists.length" class="flex justify-center mt-10">
       <button
         @click="loadMore"
-        class="bg-indigo-600 text-white px-6 py-2 rounded-lg text-sm uppercase hover:bg-indigo-700 transition-all duration-300"
+        class="bg-red-500 text-white font-extrabold px-6 py-2 rounded-lg text-sm uppercase hover:bg-red-600 transition-all duration-300 border-2 border-red-700"
       >
         Load more
       </button>

@@ -8,7 +8,7 @@
 
 <template>
   <div id="app" class="p-4 px-6 lg:px-8">
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md shadow-red-600 z-50">
       <NavBar />
     </header>
 

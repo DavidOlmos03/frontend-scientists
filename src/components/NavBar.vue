@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+    <nav class="bg-white dark:bg-gray-900">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="/src//assets/molecule_icon.png" class="h-8" alt="Flowbite Logo" />
