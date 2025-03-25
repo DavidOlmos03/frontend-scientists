@@ -9,7 +9,7 @@ import axiosInstance from '../api/servicesAPI';
 export const arrayAreaNames = (areas) => areas.map(area => area.name)
 
 /*
-* Fetch scientists by area
+* Fetch length scientists by area
 * @param {String} area - Area ID
 * @returns {Number} - Number of scientists by area
 */
