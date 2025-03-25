@@ -25,7 +25,6 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          cd frontend-scientists
           npm install
 
       - name: Correr tests
