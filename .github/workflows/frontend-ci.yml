@@ -29,6 +29,5 @@ jobs:
 
       - name: Correr tests
         run: |
-          cd frontend
           npm run test
 
