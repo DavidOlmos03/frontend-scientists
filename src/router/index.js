@@ -1,12 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
-import Contact from '../views/Contact.vue';
-
-// Errors pages 
-import NotFound from '../views/errors/NotFound.vue';
-import Loading from '../views/errors/Loading.vue';
-import Error from '../views/errors/InternalError.vue';
 
 const routes = [
   {
@@ -73,8 +65,12 @@ const routes = [
     path: '/prediction',
     name: 'Prediction',
     component: () => import('../views/Prediction.vue'),
-  }
-
+  },
+  // 🔹 Redirección a Home para rutas inexistentes
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/',
+  },
 ];
 
 const router = createRouter({

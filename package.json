@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:watch": "vitest watch",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "start-server-and-test dev http://localhost:5173 cy:open",
+    "test:e2e:ci": "start-server-and-test dev http://localhost:5173 cy:run"
   },
   "dependencies": {
     "@vueuse/core": "^12.7.0",
@@ -24,11 +28,14 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@cypress/vite-dev-server": "^6.0.3",
+    "@cypress/vue": "^6.0.2",
     "@testing-library/vue": "^8.1.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.20",
     "axios-mock-adapter": "^2.1.0",
+    "cypress": "^14.2.0",
     "jsdom": "^26.0.0",
     "msw": "^2.7.3",
     "postcss": "^8.4.49",

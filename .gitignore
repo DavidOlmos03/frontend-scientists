@@ -1,4 +1,4 @@
-# Logs
+# Logs and temporary files
 logs
 *.log
 npm-debug.log*
@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+cypress/logs/
+*.tmp
+*.lock
 
 node_modules
 dist
@@ -26,5 +29,19 @@ build/
 *.sln
 *.sw?
 
+
+# Tests
+# Cypress files
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+cypress/results/
+cypress/.cache/
+cypress/support/index.js.snap
+
+# Cypress configuration cache
+.nyc_output/
+coverage/
+report/
 
 

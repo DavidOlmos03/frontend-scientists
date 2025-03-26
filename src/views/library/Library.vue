@@ -16,7 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-white dark:bg-slate-800 ">
+  <div data-test="library-page" class="bg-white dark:bg-slate-800 ">
     <Title title="Library" :subtitle="scientists.length + ' scientists'" />
     
     <Card 

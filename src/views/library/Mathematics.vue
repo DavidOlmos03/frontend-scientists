@@ -14,7 +14,7 @@
 	});
 </script>
 <template>
-	<div class="bg-white dark:bg-slate-800 ">
+	<div data-test="mathematics-page" class="bg-white dark:bg-slate-800 ">
 	<Title title="Mathematics" :subtitle="scientistsByArea.length + ' scientists'" />
     
     <Card

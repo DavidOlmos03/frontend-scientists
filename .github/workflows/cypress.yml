@@ -1,0 +1,18 @@
+name: Cypress Tests
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run Cypress
+        uses: cypress-io/github-action@v4
+        with:
+          start: npm run dev  # Comando para iniciar tu app Vue
+          wait-on: 'http://localhost:5173'
+          browser: chrome

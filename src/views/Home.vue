@@ -25,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-white dark:bg-slate-800">
+  <div data-test="home-page" class="bg-white dark:bg-slate-800">
     <Title title="Scientists" :subtitle="scientists.length + ' scientists'" />
     <div class="grid grid-cols-3 gap-4 mb-5 mx-10">
       <div 

@@ -14,7 +14,7 @@
 	});
 </script>
 <template>
-	<div class="bg-white dark:bg-slate-800 ">
+	<div data-test="physics-page" class="bg-white dark:bg-slate-800 ">
 	<Title title="Physics" :subtitle="scientistsByArea.length + ' scientists'" />
     
     <Card :scientists = "scientistsByArea" />
